@@ -1,0 +1,130 @@
+:root {
+  font-family: Karla, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+/* Navbar */
+
+nav {
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  display: flex;
+  height: 65px;
+  padding: 0 20px;
+  color: #FFFFFF;
+}
+
+.nav--title {
+  margin: auto 0;
+  display: flex;
+  height: 65px;
+}
+.nav--title h1 {
+  font-weight: 700;
+  font-size: 21px;
+  letter-spacing: -0.1em;
+  line-height: 28px;
+}
+
+.nav--logo {
+  height: 26px;
+  margin: auto;
+  margin-right: 7px;
+}
+
+.nav--subtitle {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  margin: auto;
+  margin-right: 0;
+}
+
+/* Main */
+
+main {
+  margin: 2rem;
+}
+
+/* meme */
+
+.meme--container {
+  display: grid;
+  gap: 1rem;
+  max-width: 1000px;
+  margin-inline: auto;
+}
+
+@media (min-width: 460px) {
+  .meme--container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.meme--input {
+  border: 1px solid #D5D4D8;
+  border-radius: 5px;
+  min-height: 35px;
+}
+
+.meme--button {
+  grid-column: 1 / -1;
+  margin-bottom: 1rem;
+  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+  border-radius: 5px;
+  border-width: 0;
+  min-height: 40px;
+  color: #FFFFFF;
+  font-family: 'Karla';
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: -0.1em;
+}
+
+/* Result */
+
+.result--container {
+  max-width: 1000px;
+  margin-inline: auto;
+  position: relative;
+}
+
+.result--container img {
+  border-radius: 3px;
+  width: 100%;
+}
+
+.meme--text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:
+      2px 2px 0 #000,
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      0 2px 0 #000,
+      2px 0 0 #000,
+      0 -2px 0 #000,
+      -2px 0 0 #000,
+      2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
+}
